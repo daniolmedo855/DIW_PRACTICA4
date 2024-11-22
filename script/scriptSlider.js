@@ -135,7 +135,7 @@ const deportivo=[{
     },{
         id:12,
         img:"../img/zapatillas/deportivo/deportivo (12).webp",
-        titulo:"HANDBALL SPEZIAL",
+        titulo:"HANDBALL",
         precio: "85,00 €",
         marca:"Adidas",
         categoria:"niño",
@@ -180,7 +180,188 @@ const deportivo=[{
         }
     }];
 
-let contador=0;    
+    const casual=[{
+        id:1,
+        img:"../img/zapatillas/casual/zapatilla (1).webp",
+        titulo:"Zueco Classic",
+        precio: "60,00 €",
+        marca:"CROCS",
+        categoria:"hombre",
+        descripcion:"Mejora tu estilo para los días de relax con estos zuecos Classic Lined para mujer de Crocs. En una combinación de colores malva, estos zuecos están confeccionados con material Croslite para un uso duradero. Tienen un forro de vellón afelpado para una sensación acogedora y se asientan sobre una entresuela de espuma esponjosa para una amortiguación esencial. Tienen una suela exterior texturizada para una mayor tracción y una correa de talón pivotante para un ajuste seguro. Terminados con la marca distintiva de Crocs. Ten en cuenta que los Crocs calzan anchos. Si tienes pies estrechos, te recomendamos que elijas una talla menor. Los Crocs vienen con la talla de EE. UU. grabada en la suela.",
+        colores:{
+            blanco:"../img/zapatillas/casual/zapatilla (1).webp",
+            azul:"../img/zapatillas/casual/zapatilla (1)_azul.webp",
+        }
+    },{
+        id:2,
+        img:"../img/zapatillas/casual/zapatilla (2).webp",
+        titulo:"L003 EVO",
+        precio: "120,00 €",
+        marca:"Lacoste",
+        categoria:"hombre",
+        descripcion:"Aumenta tu estilo deportivo con estas zapatillas L003 Evo de Lacoste para hombre. En color negro, estas zapatillas tienen una parte superior textil transpirable con detalles de ante de primera calidad para darte un aspecto de primera. Se abrochan con cordones y tienen un tobillo acolchado de corte bajo para un ajuste ceñido y seguro, mientras que la lengüeta en el talón permite ponérselas y quitárselas con facilidad. Bajo los pies, la plantilla Ortholite de perlas recicladas garantiza un uso cómodo, y la suela de goma aporta la tracción esencial. Acabadas con la marca Lacoste.",
+        colores:{
+            blanco:"../img/zapatillas/casual/zapatilla (2).webp",
+            negro:"../img/zapatillas/casual/zapatilla (2)_negro.webp",
+            
+        }
+    },{
+        id:3,
+        img:"../img/zapatillas/casual/zapatilla (3).webp",
+        titulo:"T-CLIP",
+        precio: "125,00 €",
+        marca:"Lacoste",
+        categoria:"hombre",
+        descripcion:"Renueva tu colección con estas zapatillas T-Clip para hombre de Lacoste. Con un diseño de bloques de color blanco y gris, estas zapatillas inspiradas en la cancha tienen una parte superior de cuero sintético y real duradero para un uso duradero. Tienen un cierre de cordones con un ligero acolchado alrededor del cuello para un ajuste cómodo y se asientan sobre una entresuela de espuma gruesa para una amortiguación durante todo el día. Con una suela exterior de goma resistente para mantenerte en su lugar, están terminadas con la marca distintiva de Lacoste en todas partes.",
+        colores:{
+            blanco:"../img/zapatillas/casual/zapatilla (3).webp",
+            marron:"../img/zapatillas/casual/zapatilla (3)_marron.webp",
+        }
+    },{
+        id:4,
+        img:"../img/zapatillas/casual/zapatilla (4).webp",
+        titulo:"L003 2K24",
+        precio: "160,00 €",
+        marca:"Lacoste",
+        categoria:"hombre",
+        descripcion:"Sube de nivel tu rotación con estas zapatillas deportivas L003 2K24 para hombre de Lacoste. En una combinación de colores blanco con detalles metálicos, estos corredores tienen una parte superior de malla aireada con superposiciones sintéticas para un uso duradero. Tienen un cierre de cordones con un suave acolchado alrededor del tobillo para un ajuste firme y se asientan sobre una entresuela acolchada y esponjosa para una comodidad esencial. Con una suela de goma resistente para mantener el agarre, están rematados con la llamativa marca Lacoste en todas partes.",
+        colores:{
+            negro:"../img/zapatillas/casual/zapatilla (4).webp",
+            blanco:"../img/zapatillas/casual/zapatilla (4)_blanco.webp",
+        }
+    },{
+        id:5,
+        img:"../img/zapatillas/casual/zapatilla (5).webp",
+        titulo:"ROWLEY XLT",
+        precio: "130,00 €",
+        marca:"Vans",
+        categoria:"hombre",
+        descripcion:"Trae la vibra del skater con estas zapatillas Rowley XLT para hombre de Vans. En una combinación de colores azul y blanco, estos tenis están confeccionados en gamuza suave y cuero sintético para un uso duradero. Cuentan con un cierre de encaje para sujetarlo y un cuello acolchado para brindar soporte. Bajo los pies, se asientan sobre una entresuela de EVA gruesa para una pisada suave, con una suela de goma con agarre para tracción. Terminado con la marca clásica de Vans.",
+        colores:{
+            blanco:"../img/zapatillas/casual/zapatilla (5).webp",
+            azul:"../img/zapatillas/casual/zapatilla (5)_azul.webp",
+        }
+    },{
+        id:6,
+        img:"../img/zapatillas/casual/zapatilla (6).webp",
+        titulo:"GEL-NYC",
+        precio: "160,00 €",
+        marca:"ASICS",
+        categoria:"mujer",
+        descripcion:"Renueva tu colección con estas zapatillas GEL-NYC para mujer de ASICS. En una combinación de colores crema y gris nube, estas zapatillas tienen una parte superior de malla aireada con cuero suave y capas sintéticas para un uso duradero. Tienen un cierre de cordones tonal con un acolchado suave alrededor del cuello del tobillo para un ajuste firme y se asientan sobre una entresuela de espuma liviana con amortiguación de tecnología GEL para una comodidad insuperable. Tienen una suela exterior de goma resistente para mantener el agarre y están terminadas con la marca distintiva de ASICS en todas partes.",
+        colores:{
+            marron:"../img/zapatillas/casual/zapatilla (6).webp",
+        }
+    },{
+        id:7,
+        img:"../img/zapatillas/casual/zapatilla (7).webp",
+        titulo:"ALL STAR",
+        precio: "90€",
+        marca:"Converse",
+        categoria:"Mujer",
+        descripcion:"Las Converse de siempre, ¡ahora con más altura! Son las All Star Lift Hi Platform para mujer. Unas deportivas que juntan el estilo clásico con la moda casual de ahora. Este modelo de color blanco es de caña alta con una plataforma gruesa que protege la planta del pie a cada paso. El empeine es de lona resistente con un refuerzo de goma en la puntera. Los logos de Converse All Star decoran el talón de la zapatilla y uno de los laterales. ¡Corre a por tu talla antes de que se vuelvan a agotar!",
+        colores:{
+            negro:"../img/zapatillas/casual/zapatilla (7).webp",
+            blanco:"../img/zapatillas/casual/zapatilla (7)_blanco.webp",
+        }
+    },{
+        id:8,
+        img:"../img/zapatillas/casual/zapatilla (8).webp",
+        titulo:"CHUCK TAYLOR",
+        precio: "85,00 €",
+        marca:"Converse",
+        categoria:"mujer",
+        descripcion:"¿Eres de Converse? Ya tienes todos los colores habidos y por haber, ¡pero seguro que te faltan unas bambas con plataforma que te den un toque original para distinguirte del resto! Estas zapatillas All Star Lift Ox Platform para mujer vienen con el clásico diseño ‘old-school’ de la marca. Tienen el empeine de tela resistente, en color blanco con líneas negras definiendo las diferentes partes de la sneaker. Cuentan con un refuerzo en la punta, para evitar lesiones en la punta de los dedos. Es una zapatilla muy transpirable, y con su diseño resulta perfecta para la temporada de primavera-verano. Lo más llamativo de este modelo es la plataforma de su entresuela, decorada con la raya negra típica de la marca. Los cordones son de color blanco, a juego con el empeine. Están rematadas con el icónico logo Converse All Star en la lengüeta y el talón.",
+        colores:{
+            negro:"../img/zapatillas/casual/zapatilla (8).webp",
+            blanco:"../img/zapatillas/casual/zapatilla (8)_blanco.webp",
+        }
+    },{
+        id:9,
+        img:"../img/zapatillas/casual/zapatilla (9).webp",
+        titulo:"UGG CLASSIC",
+        precio: "180,00 €",
+        marca:"UGG",
+        categoria:"mujer",
+        descripcion:"La marca UGG es conocida por su calzado excepcionalmente cómodo hecho para mantener los pies calentitos aún en los días más fríos, garantizando un estilo a la última. ¡Y estas botas UGG Classic Ultra Mini Platform para mujer no son menos! Vienen en color marrón y el empeine de piel lde ante con un forro de lana para una sensación cálida y acogedora. Detalles; Para rematar, están apoyadas sobre una suela de plataforma y cuentan con una cinta de tela cosida en el talón.",
+        colores:{
+            marron:"../img/zapatillas/casual/zapatilla (9).webp",
+            negro:"../img/zapatillas/casual/zapatilla (9)_negro.webp",
+        }
+    },{
+        id:10,
+        img:"../img/zapatillas/casual/zapatilla (10).webp",
+        titulo:"GAZELLE",
+        precio: "120,00 €",
+        marca:"adidas",
+        categoria:"mujer",
+        descripcion:"Renueva tu rotación con estas zapatillas deportivas Gazelle Indoor para mujer de adidas Originals. En una combinación de colores marrón y rosa exclusiva de TOP BAMBAS, estas zapatillas tienen una parte superior de gamuza suave con una construcción distintiva en forma de T. Tienen un cierre de cordones con un cuello acolchado en el tobillo para sujetarte y se asientan sobre una entresuela estilizada con una ligera amortiguación bajo los pies. Tienen una suela exterior de goma con agarre para una tracción esencial y están acabados con la marca adidas Originals en todas partes.",
+        colores:{
+            marron:"../img/zapatillas/casual/zapatilla (10).webp",
+        }
+    },{
+        id:11,
+        img:"../img/zapatillas/casual/zapatilla (11).webp",
+        titulo:"CAMPUS 00s",
+        precio: "95,00 €",
+        marca:"Adidas",
+        categoria:"niño",
+        descripcion:"Aunque debutó en las canchas de baloncesto, la adidas Campus no tardó en triunfar en prácticamente todas partes. Este modelo renueva esta icónica silueta con materiales modernos y nuevos colores y proporciones. Presenta una parte superior de piel prémium, un forro de felpa suave y una mediasuela de color crudo que rinde homenaje al legado de la saga Campus.",
+        colores:{
+            marron:"../img/zapatillas/casual/zapatilla (11).webp",
+            azul:"../img/zapatillas/casual/zapatilla (11)_blanco.webp"
+        }
+    },{
+        id:12,
+        img:"../img/zapatillas/casual/zapatilla (12).webp",
+        titulo:"HANDBALL",
+        precio: "85,00 €",
+        marca:"Adidas",
+        categoria:"niño",
+        descripcion:"Hazte con algunos iconos de los años 70 con estas zapatillas de deporte Handball Spezial para jóvenes de adidas Originals. En una combinación de colores gris cuatro y negro básico, estas zapatillas clásicas tienen una parte superior de gamuza suave pero duradera con la clásica construcción de puntera en T. Cuentan con un cierre de cordones para sujetarte, con un forro sintético para una sensación cómoda y una suela exterior de goma para una tracción con agarre. Rematadas con las 3 rayas de cuero sintético en los laterales y la marca distintiva del trébol. | JH8664",
+        colores:{
+            rosa:"../img/zapatillas/casual/",
+            negro:"../img/zapatillas/casual/"
+        }
+    },{
+        id:13,
+        img:"../img/zapatillas/casual/zapatilla (13).webp",
+        titulo:"Air Force 1 07",
+        precio: "105,00 €",
+        marca:"Nike",
+        categoria:"niño",
+        descripcion:"El diseño Color Block abstracto y los coloridos murales revolucionan las canchas de baloncesto públicas de todo Estados Unidos. Estos bonitos e imaginativos diseños sirvieron de inspiración para el llamativo logotipo Swoosh de estas zapatillas. Las AF1, adoradas por su icónica silueta, su confección premium y su cómoda amortiguación, son un clásico que resiste a envejecer. Es un diseño fantástico para encontrar nuevas combinaciones de colores y diseños.",
+        colores:{
+            rojo:"../img/zapatillas/casual/zapatilla (13).webp",
+            negro:"../img/zapatillas/casual/zapatilla (13)_negro.webp"
+        }
+    },{
+        id:14,
+        img:"../img/zapatillas/casual/zapatilla (14).webp",
+        titulo:"REACT VISION",
+        precio: "110,00 €",
+        marca:"Nike",
+        categoria:"niño",
+        descripcion:"Las texturas por capas, las líneas intrincadas y las formas divertidas se combinan en las Nike React Vision para ofrecer un look inspirado en el increíble mundo de los sueños. Además, el diseño supercómodo y ligero cuenta con espuma Nike React para ofrecer una comodidad de ensueño para todas las aventuras, reales o imaginarias.",
+        colores:{
+            negro:"../img/zapatillas/casual/zapatilla (14).webp",
+            gris:"../img/zapatillas/casual/zapatilla (14)_gris.webp"
+        }
+    },{
+        id:15,
+        img:"../img/zapatillas/casual/",
+        titulo:"KNU SKOOL",
+        precio: "95,00 €",
+        marca:"Vans",
+        categoria:"Niño",
+        descripcion:"Ve al skatepark con estas zapatillas Knu Skool para hombre de Vans. En una combinación de colores piedra y blanco, estos tenis están confeccionados con gamuza y lona suave y duradera para un uso duradero. Cuentan con un cierre de encaje para sujetarlo y un cuello acolchado para brindar soporte. Bajo los pies, se asientan sobre una entresuela acolchada para una pisada suave, con una suela exterior de goma con agarre para tracción. Acabado con la icónica franja lateral y la marca exclusiva de Vans.",
+        colores:{
+            marron:"../img/zapatillas/casual/",
+            azul:"../img/zapatillas/casual/"
+        }
+    }];
+
+const contadores = new Map();    
 
 function limpiar(elemento){
     elemento.innerHTML="";
@@ -201,78 +382,100 @@ function mostrar_buscador(array){
         li.addEventListener("click", ()=>{
             window.location.href = "../html/compra.html?id="+zapatilla.id;
         })
-        ul.appendChild(li);
+        
+        ul.append(li);
     });
-
+    
     lista.append(ul);
     buscador.append(lista);
 }
 
-function posicion(n){
-    return Math.abs(n%5);
+function posicion(n, length) {
+    return (n + length) % length;
 }
     
-function mostrar_caja(section, div, array, titulo){    
+function mostrar_caja(section, div, array, titulo) {
+    if (!contadores.has(div)) {
+        contadores.set(div, 0);
+    }
+
+    const contador = contadores.get(div);
+
     div.innerHTML = `
-    <h3>${titulo}</h3>
-    <div>
-        <button>&#10094;</button>
-
-        <div>
-            <img src="${array[posicion(contador)].img}">
-            <div>
-                <h4>${array[posicion(contador)].titulo}</h4>
-                <button></button>
-                <button></button>
+        <h3>${titulo}</h3>
+        <div class="slider-content">
+            <button class="btn-anterior">&#10094;</button>
+            <div class="slider-images">
+                <div>
+                    <img src="${array[posicion(contador, array.length)].img}">
+                    <div>
+                        <h4>${array[posicion(contador, array.length)].titulo}</h4>
+                        <a href="../html/compra.html?id=${array[posicion(contador + 2, array.length)].id}"><img src="../img/iconos/comprar.png"></a>
+                    </div>
+                </div>
+                <div>
+                    <img src="${array[posicion(contador + 1, array.length)].img}">
+                    <div>
+                        <h4>${array[posicion(contador + 1, array.length)].titulo}</h4>
+                        <a href="../html/compra.html?id=${array[posicion(contador + 2, array.length)].id}"><img src="../img/iconos/comprar.png"></a>
+                    </div>
+                </div>
+                <div>
+                    <img src="${array[posicion(contador + 2, array.length)].img}">
+                    <div>
+                        <h4>${array[posicion(contador + 2, array.length)].titulo}</h4>
+                        <a href="../html/compra.html?id=${array[posicion(contador + 2, array.length)].id}"><img src="../img/iconos/comprar.png"></a>
+                    </div>
+                </div>
             </div>
-        </div>
-
-        <div>
-            <img src="${array[posicion(contador+1)].img}">
-            <div>
-                <h4>${array[posicion(contador+1)].titulo}</h4>
-                <button></button>
-                <button></button>
-            </div>
-        </div>
-
-        <div>
-            <img src="${array[posicion(contador+2)].img}">
-            <div>
-                <h4>${array[posicion(contador+2)].titulo}</h4>
-                <button></button>
-            </div>
-        </div>
-
-        <button>&#10094;</button>
+            <button class="btn-siguiente">&#10095;</button>
         </div>
     `;
 
-    
-    let btn_anterior = div.querySelector("div>button:first-child");
-    let btn_siguiente = div.querySelector("div>button:last-child");
+    const btnAnterior = div.querySelector(".btn-anterior");
+    const btnSiguiente = div.querySelector(".btn-siguiente");
 
-    btn_siguiente.addEventListener("click", ()=>{
-        siguiente(section, div, array);
+    btnAnterior.addEventListener("click", () => {
+        const contadorActual = contadores.get(div);
+        contadores.set(div, contadorActual - 1);
+        actualizar_slider(div, array);
     });
 
-    btn_anterior.addEventListener("click", ()=>{
-        if(contador>0){
-            anterior(section, div, array);
-        }
+    btnSiguiente.addEventListener("click", () => {
+        const contadorActual = contadores.get(div);
+        contadores.set(div, contadorActual + 1);
+        actualizar_slider(div, array);
     });
 
-    section.append(div);
-}
-    
-function siguiente(section, div, array){
-    contador++;
-    mostrar_caja(section, div, array);
+    section.appendChild(div);
 }
 
-function anterior(section, div, array){
-    contador--;
-    mostrar_caja(section, div, array);
+function actualizar_slider(div, array) {
+    const contador = contadores.get(div);
+    const sliderImages = div.querySelector(".slider-images");
+    sliderImages.innerHTML = `
+        <div>
+            <img src="${array[posicion(contador, array.length)].img}">
+            <div>
+                <h4>${array[posicion(contador, array.length)].titulo}</h4>
+                <a href="../html/compra.html?id=${array[posicion(contador + 2, array.length)].id}"><img src="../img/iconos/comprar.png"></a>
+            </div>
+        </div>
+        <div>
+            <img src="${array[posicion(contador + 1, array.length)].img}">
+            <div>
+                <h4>${array[posicion(contador + 1, array.length)].titulo}</h4>
+                <a href="../html/compra.html?id=${array[posicion(contador + 2, array.length)].id}"><img src="../img/iconos/comprar.png"></a>
+            </div>
+        </div>
+        <div>
+            <img src="${array[posicion(contador + 2, array.length)].img}">
+            <div>
+                <h4>${array[posicion(contador + 2, array.length)].titulo}</h4>
+                <a href="../html/compra.html?id=${array[posicion(contador + 2, array.length)].id}"><img src="../img/iconos/comprar.png"></a>
+            </div>
+        </div>
+    `;
 }
 
 document.addEventListener("DOMContentLoaded", ()=>{
@@ -296,19 +499,31 @@ document.addEventListener("DOMContentLoaded", ()=>{
     let div_deportivo = document.querySelector("#deportivo");
     let div_casual = document.querySelector("#casual");
 
-    let array_deportivo_hombre = deportivo.filter(zapatilla=>zapatilla.categoria=="hombre");
+    let array_deportivo_hombre = deportivo.filter(zapatilla=>zapatilla.categoria=="hombre")
     let array_deportivo_mujer = deportivo.filter(zapatilla=>zapatilla.categoria=="mujer");
     let array_deportivo_nino = deportivo.filter(zapatilla=>zapatilla.categoria=="niño");
 
-    let div_hombre = document.createElement("div");
-    let div_mujer = document.createElement("div");
-    let div_nino = document.createElement("div");
+    let array_casual_hombre = casual.filter(zapatilla=>zapatilla.categoria=="hombre")
+    let array_casual_mujer = casual.filter(zapatilla=>zapatilla.categoria=="mujer");
+    let array_casual_nino = casual.filter(zapatilla=>zapatilla.categoria=="niño");
+
+    let div_deportivo_hombre = document.createElement("div");
+    let div_deportivo_mujer = document.createElement("div");
+    let div_deportivo_nino = document.createElement("div");
+
+    let div_casual_hombre = document.createElement("div");
+    let div_casual_mujer = document.createElement("div");
+    let div_casual_nino = document.createElement("div");
 
     let titulo_hombre = "Hombre";
     let titulo_mujer = "Mujer";
     let titulo_nino = "Niño";
 
-    mostrar_caja(div_deportivo, div_hombre, array_deportivo_hombre, titulo_hombre);
-    mostrar_caja(div_deportivo, div_mujer, array_deportivo_mujer, titulo_mujer);
-    mostrar_caja(div_deportivo, div_nino, array_deportivo_nino, titulo_nino);
+    mostrar_caja(div_deportivo, div_deportivo_hombre, array_deportivo_hombre, titulo_hombre);
+    mostrar_caja(div_deportivo, div_deportivo_mujer, array_deportivo_mujer, titulo_mujer);
+    mostrar_caja(div_deportivo, div_deportivo_nino, array_deportivo_nino, titulo_nino);
+
+    mostrar_caja(div_casual, div_casual_hombre, array_casual_hombre, titulo_hombre);
+    mostrar_caja(div_casual, div_casual_mujer, array_casual_mujer, titulo_mujer);
+    mostrar_caja(div_casual, div_casual_nino, array_casual_nino, titulo_nino);
 });
