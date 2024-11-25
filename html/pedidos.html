@@ -30,19 +30,26 @@
                     <img src="../img/iconos/ubicacion.png" alt="">
                     <h3>Seguimiento de envío</h3>
                     <button class="boton">Localizar pedido</button>
+                    
                 </div>
                 <div>
-                    <img src="" alt="">
+                    <form action="#">
+                        <input type="text" placeholder="Codigo de envio">
+                        <input type="email" placeholder="Correo electrónico">
+                        <input type="submit" value="Enviar" class="boton">
+                    </form>
+                </div>
+                <div>
+                    <img src="../img/iconos/envio.png" alt="">
                     <div>
                         <h3>ENVÍO A DOMICILIO ESTÁNDAR SIN CONTACTO</h3>
-                        <p>Plazo de entrega: 4 - 8 días laborables, 6 - 10 días laborables para envíos a las Islas Canarias..
-                        </p>
+                        <p>Plazo de entrega: 4 - 8 días laborables</p>
                     </div>
                     <p>4.99€<br>
                     (GRATIS en pedidos a partir de 50€)</p>
                 </div>
                 <div>
-                    <img src="" alt="">
+                    <img src="../img/iconos/envio_expres.png" alt="">
                     <div>
                         <h3>ENVÍO EXPRÉS A DOMICILIO</h3>
                         <p>El plazo de entrega a domicilio es de 7 días laborables. Los gastos de envío son de 6.99€.</p>
@@ -50,7 +57,7 @@
                     <p>6.99€</p>
                 </div>
                 <div>
-                    <img src="" alt="">
+                    <img src="../img/iconos/tienda.png" alt="">
                     <div>
                         <h3>RECOGIDA EN TIENDA GRATIS EL MISMO DÍA</h3>
                         <p>Haz tu pedido online antes de las 14:00 (hora española peninsular) para poder recogerlo gratuitamente en la tienda que prefieras. Los pedidos que se realicen después de las 14:00 se podrán recoger al día siguiente.
@@ -63,7 +70,7 @@
 
         <section id="mapa">
             <h2>BUSCA TU TIENDA MAS CERCANA</h2>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d17980.48735344824!2d-3.6102040055420126!3d37.18761212060078!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2ses!4v1732526805879!5m2!1ses!2ses" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d17980.48735344824!2d-3.6102040055420126!3d37.18761212060078!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2ses!4v1732526805879!5m2!1ses!2ses" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </section>
 
         <section id="inscripcion">
@@ -71,7 +78,7 @@
             <div>
                 <form action="#">
                     <input type="mail" placeholder="Introduce un e-mail valido" required>
-                    <input type="submit">
+                    <input type="submit" value="&#10148;">
                 </form>
                 <p>Tus datos personales serán tratados siguiendo nuestra política de privacidad.
                     Para conocer todos los detalles sobre su uso, consulta nuestra Política de Privacidad.</p>
@@ -79,24 +86,22 @@
             <div>
                 <div>
                     <h4>TARJETAS REGALO</h4>
-                    <img src="" alt="">
+                    <a href="#"><img src="../img/promo/tarjetas_regalo.png" alt=""></a>
                     <p>La tarjeta regalo física de TOP BAMBAS es el regalo que estabas buscando.</p>
-                    <a href=""></a>
                 </div>
                 <div>
                     <h4>CONTACTANOS</h4>
-                    <img src="" alt="">
+                    <a href="./contacto.html#correo"><img src="../img/promo/contacto.webp" alt=""></a>
                     <p>Estamos aquí para ayudarte. Escríbenos a nuestro correo electrónico y resolveremos tus dudas lo antes posible</p>
-                    <a href=""></a>
                 </div>
                 <div>
                     <h4>DESCARGA NUESTRA APP</h4>
-                    <img src="" alt="">
-                    <p>Compra las 24h los 365 días al año con la App de TOP BAMBAS. Recibe información sobre las últimas novedades estés donde estés.</p>
                     <div>
-                        <a href=""><img src="" alt=""></a>
-                        <a href=""><img src="" alt=""></a>
+                        <a href="https://play.google.com/store/apps?hl=es_419"><img src="" alt=""><img src="../img/promo/app_store.png" alt=""></a>
+                        <a href="https://www.apple.com/es/app-store/"><img src="" alt=""><img src="../img/promo/play_store.png" alt=""></a>
                     </div>
+                    <p>Compra las 24h los 365 días al año con la App de TOP BAMBAS. Recibe información sobre las últimas novedades estés donde estés.</p>
+                    
                 </div>
             </div>
         </section>
@@ -311,6 +316,23 @@
     
     <script src="../script/scriptHeaderFooter.js">
         
+    </script>
+
+    <script>
+        let boton = document.querySelector("#pedidos button");
+        let form = document.querySelector("form").parentElement;
+        let div = document.querySelector("#pedidos>div>div:first-child");
+        form.style.display="none";
+
+        document.addEventListener("DOMContentLoaded", ()=>{
+            boton.addEventListener("click", ()=>{
+                if(form.style.display=="none"){
+                    form.style.display="block";
+                }else{
+                    form.style.display="none";
+                }
+            })
+        });
     </script>
 </body>
 </html>
