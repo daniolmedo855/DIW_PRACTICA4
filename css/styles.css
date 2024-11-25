@@ -818,25 +818,29 @@ button{
 
                     }
 
-                    &:hover>div{
-                        position: absolute;
-                        height: 15%; 
-                        background-color: var(--primario);
-                        color: white;
-                        width: 100%;
-                        display: flex;
-                        justify-content: space-between;
-                        align-items: center;
-                        padding: 0 10px;
+                    &:hover{
 
-
-                        >a{
+                        >div{
+                            position: absolute;
+                            height: 15%; 
+                            background-color: var(--primario);
+                            color: white;
+                            width: 100%;
                             display: flex;
+                            justify-content: space-between;
                             align-items: center;
-                            justify-content: end;
-                            width: 20%;
-                            >img {
-                                    width: 40%;
+                            padding: 0 10px;
+                            bottom: 0;
+
+
+                            >a{
+                                display: flex;
+                                align-items: center;
+                                justify-content: end;
+                                width: 20%;
+                                >img {
+                                        width: 40%;
+                                }
                             }
                         }
                     }
@@ -847,8 +851,10 @@ button{
 }
 
 @media screen and (max-width: 1100px) {
-    #deportivo, #casualdiv>div>div>div>div>h4{
-        font-size: 20px;
+    #deportivo, #casual {
+        >div>div>div>div>div>h4{
+            font-size: 20px;
+        }
     }
 }
 
@@ -861,12 +867,20 @@ button{
             font-size: 15px;
         }
     }
+
+    #deportivo, #casual{ 
+        >div>div>div>div>div>a>img{
+            width: 50%;
+        }
+    }
 }
 
 
 @media screen and (max-width: 600px) {
-    #deportivo, #casualdiv>div>div>div>div>h4{
-        font-size: 10px;
+    #deportivo, #casual{ 
+        >div>div>div>div>div>h4{
+            font-size: 10px;
+        } 
     }
 }
 
@@ -877,6 +891,24 @@ button{
         }
         >div>div>div>div>div>h4{
             font-size: 6px;
+        }
+    }
+}
+
+/*PEDIDOS*/
+/*PEDIDOS*/
+#pedidos{
+    width: 80%;
+    margin: 0 auto;
+    >h2{
+        text-align: center;
+    }
+    >div{
+        >div{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: solid 1px var(--primario);
         }
     }
 }
