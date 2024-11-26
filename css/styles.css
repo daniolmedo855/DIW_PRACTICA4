@@ -1140,11 +1140,11 @@ button{
         display: flex;
         justify-content: center;
         align-items: start;
-        margin-bottom: 4%;
+        margin-bottom: 10%;
 
         >div{
             width: 30%;
-            background-color: var(--letra1);
+            background-color: var(--primario);
             margin: 0 1%;
             color: var(--letra2);
             padding: 1%;
@@ -1160,6 +1160,10 @@ button{
                 max-height: 160px;
                 margin: 0 auto;
             }
+        }
+
+        >:nth-child(2)>a>img{
+            filter: drop-shadow(5px 5px 1px var(--letra1));
         }
     }
 }
@@ -1221,5 +1225,296 @@ button{
             }
         }
         
+    }
+}
+
+/*CONTACTO*/
+/*NOSOTROS*/
+#nosotros{
+    margin: 5% 0;
+    >div{
+        width: 60%;
+        margin: 0 auto;
+        margin-bottom: 4%;
+        >h2{
+            text-align: center;
+            margin-bottom: 2%;
+        }
+        >p{
+            text-align: justify;
+        }
+        
+    }
+    >div:last-child{
+        width: 100%;
+        background-color: var(--primario);
+        >div{
+            width: 80%;
+            margin: 0 auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: var(--letra2);
+            >div{
+                margin: 0 2%;
+                padding: 4% 0;
+                >h3{
+                    text-align: center;
+                    margin-bottom: 2%;
+                }
+                >p{
+                    text-align: justify;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 900px) {
+    #nosotros{
+        >div{
+            >h2{
+                font-size: 30px;
+            }
+            >p{
+                font-size: 15px;
+
+            }
+            >div>div{
+                >h3{
+                    font-size: 25px;
+                }
+                >p{
+                    font-size: 15px;
+                }
+            }
+        }
+
+    }
+}
+
+@media screen and (max-width: 700px) {
+    #nosotros{
+        >div{
+            >h2{
+                font-size: 25px;
+            }
+            >p{
+                font-size: 15px;
+            }
+            >div>div{
+                >h3{
+                    font-size: 20px;
+                }
+                >p{
+                    font-size: 15px;
+                }
+            }
+        }
+
+    }
+}
+
+@media screen and (max-width: 600px) {
+    #nosotros{
+        >div{
+            >h2{
+                font-size: 20px;
+            }
+            >p{
+                font-size: 10px;
+            }
+            >div>div{
+                >h3{
+                    font-size: 15px;
+                }
+                >p{
+                    font-size: 10px;
+                }
+            }
+        }
+
+    }
+}
+
+@media screen and (max-width: 450px) {
+    #nosotros>div>h2{
+        font-size: 15px;
+    }
+}
+
+/*contacto*/
+#contacto{
+    margin: 4% 0;
+    >div:first-child{
+        width: 60%;
+        margin: 0 auto;
+        text-align: center;
+        background-color: var(--primario);
+        margin-bottom: 6%;
+        padding-bottom: 2%;
+        border-radius: 20px;
+
+        >h3{
+            background-color: var(--letra2);
+            width: 100%;
+            border: solid 1px var(--primario);
+            color: var(--primario);
+            border-top-left-radius: 20px;
+            border-top-right-radius: 20px;
+        }
+        >form{
+            display: flex;
+            flex-direction: column;
+            width: 40%;
+            margin: 4% auto;
+            >input{
+                padding: 3% 5%;
+                margin: 0.5% 0;
+                border-radius: 20px;
+                border: none;
+                outline: none;
+            }
+
+            >input:nth-child(3){
+                padding-bottom: 40%;
+            }
+            
+            .boton{
+                width: 40%;
+                margin: 0 auto;
+                margin-top: 5%;
+                border: solid 1px var(--primario);   
+                background-color: var(--letra2);
+                color: var(--primario);
+            }
+            .boton:hover{
+                background-color: var(--primario);
+                color: var(--letra2);
+                border: solid 1px var(--letra2);    
+            }
+        }
+    }
+
+    >div:last-child{
+        background-color: var(--primario);
+        padding: 1% 0;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        >a{
+            width: 60px;
+            height: 60px;
+            >img{
+                max-width: 100%;
+                width: 60px;
+
+                &:hover{
+                    filter: invert();
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 900px) {
+    #contacto{
+        >div:first-child{
+            >form{
+                width: 80%;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 800px) {
+    #contacto{
+        >div:first-child{
+            >h3{
+                font-size: 20px;
+            }
+        }
+    }
+}
+
+
+@media screen and (max-width: 800px) {
+    #contacto{
+        >div:last-child{
+            >a{
+                width: 40px;
+                height: 40px;
+                >img{
+                    width: 40px;
+                }
+            }
+        }
+    }
+}
+
+/*Contactos*/
+#comentarios{
+    width: 80%;
+    margin: 4% auto;
+
+    >div{
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        margin-bottom: 2%;
+        >img{
+            max-width: 100%;
+            margin-right: 2%;
+        }
+    }
+}
+
+@media screen and (max-width: 800px) {
+    #comentarios{
+        >h2{
+            font-size: 35px;
+        }
+    }
+}
+
+@media screen and (max-width: 700px) {
+    #comentarios{
+        >h2{
+            font-size: 30px;
+            text-align: center;
+        }
+        >div{
+            >img{
+                width: 100px;
+            }
+
+            >div{
+                >p{
+                    font-size: 12px;
+                }
+                p:nth-child(2){
+                    font-size: 10px;
+                }
+                >h4{
+                    font-size: 15px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 600px) {
+    #comentarios{
+        >h2{
+            font-size: 25px;
+        }
+    }
+}
+
+@media screen and (max-width: 500px) {
+    #comentarios{
+        >h2{
+            font-size: 20px;
+        }
     }
 }
