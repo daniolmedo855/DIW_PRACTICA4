@@ -47,21 +47,21 @@ function mostrar_caja(section, div, array, titulo) {
                     <img src="${array[posicion(contador, array.length)].img}">
                     <div>
                         <h4>${array[posicion(contador, array.length)].titulo}</h4>
-                        <a href="../html/compra.html?id=${array[posicion(contador , array.length)].id}"><img src="../img/iconos/comprar.png"></a>
+                        <a href="../html/compra.html?id=${array[posicion(contador , array.length)].id}&calzado=${array[posicion(contador, array.length)].calzado}"><img src="../img/iconos/comprar.png"></a>
                     </div>
                 </div>
                 <div>
                     <img src="${array[posicion(contador + 1, array.length)].img}">
                     <div>
                         <h4>${array[posicion(contador + 1, array.length)].titulo}</h4>
-                        <a href="../html/compra.html?id=${array[posicion(contador + 1, array.length)].id}"><img src="../img/iconos/comprar.png"></a>
+                        <a href="../html/compra.html?id=${array[posicion(contador + 1, array.length)].id}&calzado=${array[posicion(contador + 1, array.length)].calzado}"><img src="../img/iconos/comprar.png"></a>
                     </div>
                 </div>
                 <div>
                     <img src="${array[posicion(contador + 2, array.length)].img}">
                     <div>
                         <h4>${array[posicion(contador + 2, array.length)].titulo}</h4>
-                        <a href="../html/compra.html?id=${array[posicion(contador + 2, array.length)].id}"><img src="../img/iconos/comprar.png"></a>
+                        <a href="../html/compra.html?id=${array[posicion(contador + 2, array.length)].id}&calzado=${array[posicion(contador + 2, array.length)].calzado}"><img src="../img/iconos/comprar.png"></a>
                     </div>
                 </div>
             </div>
@@ -95,21 +95,21 @@ function actualizar_slider(div, array) {
             <img src="${array[posicion(contador, array.length)].img}">
             <div>
                 <h4>${array[posicion(contador, array.length)].titulo}</h4>
-                <a href="../html/compra.html?id=${array[posicion(contador , array.length)].id}"><img src="../img/iconos/comprar.png"></a>
+                <a href="../html/compra.html?id=${array[posicion(contador , array.length)].id}&calzado=${array[posicion(contador, array.length)].calzado}"><img src="../img/iconos/comprar.png"></a>
             </div>
         </div>
         <div>
             <img src="${array[posicion(contador + 1, array.length)].img}">
             <div>
                 <h4>${array[posicion(contador + 1, array.length)].titulo}</h4>
-                <a href="../html/compra.html?id=${array[posicion(contador + 1, array.length)].id}"><img src="../img/iconos/comprar.png"></a>
+                <a href="../html/compra.html?id=${array[posicion(contador + 1, array.length)].id}&calzado=${array[posicion(contador + 1, array.length)].calzado}"><img src="../img/iconos/comprar.png"></a>
             </div>
         </div>
         <div>
             <img src="${array[posicion(contador + 2, array.length)].img}">
             <div>
                 <h4>${array[posicion(contador + 2, array.length)].titulo}</h4>
-                <a href="../html/compra.html?id=${array[posicion(contador + 2, array.length)].id}"><img src="../img/iconos/comprar.png"></a>
+                <a href="../html/compra.html?id=${array[posicion(contador + 2, array.length)].id}&calzado=${array[posicion(contador + 2, array.length)].calzado}"><img src="../img/iconos/comprar.png"></a>
             </div>
         </div>
     `;
