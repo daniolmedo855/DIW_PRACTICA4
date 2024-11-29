@@ -686,6 +686,106 @@ button{
     }
 }
 
+#blogs{
+    border-top: solid 2px var(--primario);
+    margin-top: 2%;
+    padding-top: 2%;
+    >div{
+        width: 80%;
+        margin: 0 auto;
+        margin-bottom: 6%;
+        text-align: center;
+        >div{
+            margin: 4% 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            >div{
+                width: 30%;
+                border: solid 1px var(--primario);
+                padding: 2%;
+                height: 350px;
+                >p{
+                    text-align: justify;
+                }
+                >img{
+                    height: 150px;
+                    margin-bottom: 2%;
+                }
+            }
+        }
+    }
+    >div>div>div:hover{
+        scale: 1.1;
+    }
+}
+
+@media screen and (max-width: 1400px) {
+    #blogs>div>div{
+        >div{
+            height: 300px;
+            >p{
+                font-size: 14px;
+            }
+            >img{
+                height: 100px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    #blogs>div>div{
+        >div{
+            height: 300px;
+            >p{
+                font-size: 12px;
+            }
+            >img{
+                height: 100px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 900px) {
+    #blogs{
+        p{text-align: justify;}
+        >div>div{
+            flex-direction: column;
+            
+            >div{
+                margin: 0;
+                height: 310px;
+                width: 60%;
+                margin-bottom: 2%;
+                >p{
+                    font-size: 15px;
+                }
+                >img{
+                    height: 150px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 900px) {
+    #blogs>div>div>div{
+        width: 80%;
+            
+        
+    }
+}
+
+@media screen and (max-width: 900px) {
+    #blogs>div>div>div{
+        width: 100%;
+            
+        
+    }
+}
+
 /*ZAPATILLAS*/
 /*Buscador*/
 #buscador{
